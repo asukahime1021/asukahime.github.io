@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ヘルプ・使い方 - 実戦勝録</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --bg: #f9f9f9;
+            --card-bg: #ffffff;
+            --text: #333;
+            --text-dim: #666;
+            --border: #eeeeee;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg);
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid var(--primary);
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 25px;
+            font-size: 1.1em;
+        }
+
+        .index {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .index-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .index ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .index li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .feature-box {
+            padding: 15px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tip {
+            background-color: #fff9db;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ffec99;
+            margin: 20px 0;
+        }
+
+        .tip::before {
+            content: "💡 ヒント: ";
+            font-weight: bold;
+            color: #f08c00;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9em;
+            color: var(--text-dim);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>実戦勝録 使い方ガイド</h1>
+
+        <div class="index">
+            <span class="index-title">目次</span>
+            <ul>
+                <li><a href="#calendar">カレンダー（実戦記録の管理）</a></li>
+                <li><a href="#stats">集計・分析（データの振り返り）</a></li>
+                <li><a href="#counter">小役カウンター（設定判別ツール）</a></li>
+                <li><a href="#settings">各種設定（アプリのカスタマイズ）</a></li>
+                <li><a href="#faq">よくある質問</a></li>
+            </ul>
+        </div>
+
+        <section id="calendar">
+            <h2>カレンダー（実戦記録の管理）</h2>
+            <p>日々の実戦結果をカレンダー形式で視覚的に管理できます。</p>
+
+            <h3>実戦を記録する</h3>
+            <p>カレンダー画面右下の「＋」ボタンをタップすると入力画面が開きます。日付、機種名、店舗名、投資・回収金額などを入力して保存してください。</p>
+
+            <h3>記録を確認・編集する</h3>
+            <p>カレンダーの日付を選択すると、その日の実戦一覧が表示されます。項目をタップすると内容の編集や削除が行えます。</p>
+
+            <h3>表示の絞り込み</h3>
+            <p>画面右上のフィルタアイコンから、パチンコ・スロットの種別や、特定の店舗・機種だけに絞り込んで収支を確認できます。</p>
+
+            <div class="tip">
+                カレンダーの設定（設定画面）で、収支金額ではなく「遊戯時間」に基づいてカレンダーの色を変えるモードに切り替えることも可能です。
+            </div>
+        </section>
+
+        <section id="stats">
+            <h2>集計・分析（データの振り返り）</h2>
+            <p>これまでの実戦データを多角的に分析できます。</p>
+
+            <h3>収支タブ</h3>
+            <p>「年別」「月別」「機種別」の収支を確認できます。並べ替え機能を使って、どの機種で最も勝っているかなどを瞬時に把握できます。</p>
+
+            <h3>遊戯実績タブ</h3>
+            <p>機種ごとの総回転数、大当たり確率、1kあたりの回転数（回転率）を表示します。正確なデータを蓄積することで、機種ごとの癖を見極めることができます。</p>
+
+            <h3>傾向分析タブ</h3>
+            <p>「勝率の高い曜日」や「収支の波」などを分析し、立ち回りの改善に役立つインサイトを提供します。</p>
+        </section>
+
+        <section id="counter">
+            <h2>小役カウンター（設定判別ツール）</h2>
+            <p>実戦中の小役出現率をリアルタイムでカウントします。</p>
+
+            <h3>基本的な使い方</h3>
+            <p>各ボタンをタップすることでカウントを増やせます。間違えた場合はマイナスボタン（－）で減らすことが可能です。総回転数を入力すると、自動的に出現確率（1/x形式とパーセント）を算出します。</p>
+
+            <h3>項目のカスタマイズ</h3>
+            <p>編集アイコンをタップすると、ボタンの名前や色を選べます。機種に合わせて「チェリー」「スイカ」など自由に変更してください。</p>
+        </section>
+
+        <section id="settings">
+            <h2>各種設定（アプリのカスタマイズ）</h2>
+            <p>アプリを使いやすく調整できます。</p>
+            <ul>
+                <li><strong>テーマ設定:</strong> アプリ全体のテーマカラーを変更できます。</li>
+                <li><strong>表示モード:</strong> ライト/ダーク/グレーの切り替えが可能です。</li>
+                <li><strong>カレンダーカラー:</strong> カレンダーの色の基準を「収支」か「遊戯時間」から選択できます。</li>
+                <li><strong>遊戯実績項目:</strong> 記録画面で表示・入力する項目（回転数、大当たり回数など）をカスタマイズできます。</li>
+            </ul>
+        </section>
+
+        <section id="faq">
+            <h2>よくある質問</h2>
+            <h3>Q. データはどこに保存されますか？</h3>
+            <p>A. すべてユーザーの端末内に保存されます。サーバーへ送信されることはありません。</p>
+
+            <h3>Q. アプリを消すとデータも消えますか？</h3>
+            <p>A. はい、アプリをアンインストールするとデータも消失しますのでご注意ください。</p>
+        </section>
+
+        <footer>
+            <p>© 2026 実戦勝録 開発チーム</p>
+        </footer>
+    </div>
+</body>
+
+</html>
